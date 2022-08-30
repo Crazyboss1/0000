@@ -922,19 +922,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('🤖 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/ItsMoviesPoint'),
+            InlineKeyboardButton('🔮 𝙎𝙩𝙖𝙩𝙪𝙨', callback_data='stats')
             ],[
-            InlineKeyboardButton('ғɪʟᴇ sᴛᴀᴛᴜs', callback_data='stats'),
-            InlineKeyboardButton('sᴏᴜʀᴄᴇ', callback_data='source')
-            ],[
-            InlineKeyboardButton('🔍sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
-            ],[
-            InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ🍿', url='https://t.me/MovieHubOfficialGroup')
-            ],[
-            InlineKeyboardButton('ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs', callback_data='help')
-            ],[
-            InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ ✗', callback_data='close_data'),
+            InlineKeyboardButton('🏠 𝙃𝙤𝙢𝙚', callback_data='start'),
+            InlineKeyboardButton('🔐 𝘾𝙡𝙤𝙨𝙚', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await query.message.reply_text("● ◌ ◌")
